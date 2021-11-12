@@ -21,7 +21,7 @@
             role="tabpanel"
             aria-labelledby="home-tab"
           >
-            <h3 class="register-heading text-nowrap">Ensira seus dados na lista.</h3>
+            <h3 class="register-heading text-nowrap">Cadastre para jogar Poker.</h3>
             <div class="row register-form">
               <div class="col-md-12">
                 <form autocomplete="off">
@@ -93,15 +93,59 @@
       </div>
     </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
   
   </body>
-  janela <script> . fbAsyncInit = function () { 
+  <script> . fbAsyncInit = function () { 
     FB . init ({ 
       appId             : 'your-app-id' , 
       autoLogAppEvents : true , 
       xfbml             : true , 
-      version           : ' ' }); }; </ script> <script assíncrona adiar crossorigin = "anonymous" src = "https://connect.facebook.net/en_US/sdk.js" > </ script>      v12.0
+      version           : ' ' }); };
+   </ script> 
+   <script assíncrona adiar crossorigin = "anonymous" src = "https://connect.facebook.net/en_US/sdk.js" > 
+  </ script>      v12.0
+  <script>
+function gotowhatsapp() {
     
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var service = document.getElementById("service").value;
+
+    var url = "https://wa.me/31983191984?text=" 
+    + "Name: " + name + "%0a"
+    + "Phone: " + phone + "%0a"
+    + "Email: " + email  + "%0a"
+    + "Service: " + service; 
+
+    window.open(url, '_blank').focus();
+}
+</script>
+
+<a href="https://wa.me/31983191984?text=Olha%20eu%20aqui!"
+class="float"
+style="
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  right: 120px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  cursor: poiner;
+  box-shadow: 2px 2px 3px #999;
+"
+>
+<img
+  src="https://trickuweb.com/whatsapp.png"
+  alt=""
+  height="60px"
+  width="60px"
+/>
+</a>
 </html>
