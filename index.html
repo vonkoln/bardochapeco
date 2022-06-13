@@ -110,7 +110,14 @@
    <script assíncrona adiar crossorigin = "anonymous" src = "https://connect.facebook.net/en_US/sdk.js" > 
   </ script>      v12.0
   <script>
-function gotowhatsapp() {
+     
+     <form action="https://formspree.io/f/{form_id}" method="post">
+  <label for="email">brunovonkoln@gmail.com</label>
+  <input name="Email" id="email" type="email">
+  <button type="submit">Submit</button>
+</form>
+    
+/*function gotowhatsapp() { (ESTOU TESTANDO POR EMAIL)
     
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
@@ -121,7 +128,7 @@ function gotowhatsapp() {
     + "Name: " + name + "%0a"
     + "Phone: " + phone + "%0a"
     + "Email: " + email  + "%0a"
-    + "Service: " + service; 
+    + "Service: " + service; */
 
     window.open(url, '_blank').focus();
 }
